@@ -1,0 +1,160 @@
+.app-shell {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(228, 95, 60, 0.14), transparent 35%),
+    radial-gradient(circle at right center, rgba(46, 170, 130, 0.14), transparent 28%),
+    linear-gradient(180deg, #fffaf6 0%, #f7fbf8 100%);
+  color: #18211b;
+  padding: 40px 20px 56px;
+  box-sizing: border-box;
+}
+
+.intro,
+.forms-grid {
+  width: min(1040px, 100%);
+  margin: 0 auto;
+}
+
+.intro {
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #d95c38;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.intro h1 {
+  margin: 0;
+  font-size: 2.4rem;
+}
+
+.intro-copy {
+  margin: 12px 0 20px;
+  max-width: 560px;
+  color: #425047;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.status-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 0;
+}
+
+.status-list div {
+  border: 1px solid #d9e5db;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.82);
+  padding: 14px 16px;
+}
+
+.status-list dt {
+  color: #4c5b52;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+.status-list dd {
+  margin: 0;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.forms-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.panel {
+  border: 1px solid #d9e5db;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 24px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: auto;
+  box-sizing: border-box;
+  box-shadow: 0 18px 40px rgba(62, 80, 69, 0.08);
+}
+
+.panel-heading {
+  margin-bottom: 4px;
+}
+
+.panel-heading h2 {
+  margin: 0 0 8px;
+  font-size: 1.4rem;
+}
+
+.panel-heading p {
+  margin: 0;
+  color: #58665d;
+  line-height: 1.45;
+}
+
+.panel label {
+  font-weight: 600;
+}
+
+.panel input {
+  height: 44px;
+  border: 1px solid #bfd0c3;
+  border-radius: 8px;
+  padding: 0 14px;
+  font: inherit;
+  color: inherit;
+  background: #fcfffd;
+  box-sizing: border-box;
+}
+
+.panel input:focus {
+  outline: 2px solid rgba(46, 170, 130, 0.2);
+  border-color: #2eaa82;
+}
+
+.panel button {
+  height: 46px;
+  margin-top: 4px;
+  border: 0;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #d95c38 0%, #f29f4b 100%);
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.panel button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.feedback {
+  min-height: 24px;
+  margin: 4px 0 0;
+  color: #0a7a5a;
+  font-weight: 600;
+}
+
+@media (max-width: 760px) {
+  .app-shell {
+    padding: 28px 16px 40px;
+  }
+
+  .intro h1 {
+    font-size: 1.9rem;
+  }
+
+  .status-list,
+  .forms-grid {
+    grid-template-columns: 1fr;
+  }
+}
