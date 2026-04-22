@@ -38,8 +38,12 @@ jobs:
         with:
           node-version: 18
 
-      - name: 의존성 설치 & 빌드
+      - name: 의존성 설치
         run: |
           cd frontend
           npm install
+
+      - name: 프론트엔드 빌드
+        run: |
+          cd frontend
           npm run build
